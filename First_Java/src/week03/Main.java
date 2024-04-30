@@ -69,7 +69,7 @@ public class Main {
         System.out.println("type : " + type); // 기존에 선언한 값 'D' 출력, 원본 값 변경되지 않음
         // 매서드 실행 완료 후 변환된 car 인스턴스의 gear 타입 확인
         System.out.println("gear : " + car.gear);
-        //하하 바뀐다 다요요요 test
+        //하하
 
 //        System.out.println();
 //        //참조형 매개변수
