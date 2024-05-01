@@ -1,4 +1,4 @@
-package week03;
+package week03.staticFolder;
 
 public class Tire {
 

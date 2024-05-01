@@ -1,16 +1,9 @@
-package week03;
+package week03.staticFolder;
 
 public class Car {
-    // <필드영역>
-    // [우리가 클래스를 만들기 위해서는 4가지 STEP이 필요합니다.]
-    // 1. 만들려고하는 설계도를 선언합니다.(클래스 선언)
-    // 2. 객체가 가지고 있어야 할 속성(필드)를 정의 합니다.
-    // 3. 겍채를 생성하는 방식을 정의합니다.(생성자)
-    // -constructor
-    // 4. 객체가 가지고 있어야 할 행위(메서드)를 정의 합니다.
     
     // 1) 고유 데이터 영역
-    String company; //자동차 회사
+    static String company = "GENESIS"; //자동차 회사
     String model = "Gv80"; //자동차 모델
     String color; // 자동차 색
     double price; // 자동차 가격
@@ -87,6 +80,12 @@ public class Car {
         tireCompany.company = "KIA";
         tire = tireCompany;
         return tire;
+    }
+
+    static String setCompany(String companyName){
+        //System.out.println();
+        company = companyName;
+        return company;
     }
 
 }

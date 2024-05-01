@@ -69,13 +69,22 @@ public class Main {
         System.out.println("type : " + type); // 기존에 선언한 값 'D' 출력, 원본 값 변경되지 않음
         // 매서드 실행 완료 후 변환된 car 인스턴스의 gear 타입 확인
         System.out.println("gear : " + car.gear);
-        //하하
 
-//        System.out.println();
-//        //참조형 매개변수
-//        Tire tire = new Tire();
-//        tire.company = "금호";
 
+        System.out.println();
+        //참조형 매개변수
+        
+        Tire tire = new Tire();
+        tire.company = "금호"; // 금호 타이어 객체 생성
+
+        // 차 객체의 타이어를 등록하는 매서드 호출한 후 변환 값으로 차 객체의 타이어 객체 변환
+        Tire carInstanceTire = car.setTire(tire);
+
+        System.out.println("tire.company : " + tire.company); // KIA 출력
+        // 전달할 매개값으로 지정된  tire  인스턴스의 주소값이 전달되었기 때문에 호출된 메서드에 의해
+
+        // 메서드 실행 완료 후 반환된 car 인스턴스의 tire 객체 값이 변환되어 저장된 참조형 변수 car
+        System.out.println("carInstanceTire.company : " + carInstanceTire.company);
 
 
     }
